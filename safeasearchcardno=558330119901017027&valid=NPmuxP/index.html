@@ -1,0 +1,300 @@
+<html><head>
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>人员制证信息(已注销)</title>
+<link rel="stylesheet" type="text/css" href="css/zui.min.css">
+<script type="text/javascript" src="js/zui.min.js"></script>
+</head>
+<body>
+
+<input type="hidden" id="parttimework" name="parttimework" value="">
+<input type="hidden" id="partjobtitle" name="partjobtitle" value="">
+<input type="hidden" id="finalCompany" name="finalCompany" value="">
+
+<input type="hidden" id="labordispatchdatebeg" name="labordispatchdatebeg" value="">
+<input type="hidden" id="labordispatchdateend" name="labordispatchdateend" value="">
+	<div class="list list-condensed">
+		<div class="items items-hover">
+			<div class="item">
+				<div class="item-content">
+					<div class="text" style="text-align: center;">
+						<img src="images/Weixin Image_20240612001000.jpg" height="472px">
+					</div>
+				</div>
+			</div>
+			<div class="item">
+				<div class="item-heading">
+					<h4>证件号码</h4>
+				</div>
+				<div class="item-content">
+					<div class="text">
+						<input id="cardnoId" name="cardno" type="text" class="form-control" value="558330119901027432" placeholder="证件号码" readonly="">
+					</div>
+				</div>
+			</div>
+			<div class="item">
+				<div class="item-heading">
+					<h4>姓(英)</h4>
+				</div>
+				<div class="item-content">
+					<div class="text">
+						<input id="lastnameId" name="lastname" type="text" class="form-control" value="ADEED" readonly="">
+					</div>
+				</div>
+			</div>
+			<div class="item">
+				<div class="item-heading">
+					<h4>名(英)</h4>
+				</div>
+				<div class="item-content">
+					<div class="text">
+						<input id="firstnameId" name="firstname" type="text" class="form-control" value="FARRUKH MUHAMMAD" readonly="">
+					</div>
+				</div>
+			</div>
+			<div class="item">
+				<div class="item-heading">
+					<h4>曾用姓(英)</h4>
+				</div>
+				<div class="item-content">
+					<div class="text">
+						<input id="lastnamehisId" name="lastnamehis" type="text" class="form-control" value="" readonly="">
+					</div>
+				</div>
+			</div>
+			<div class="item">
+				<div class="item-heading">
+					<h4>中文姓名</h4>
+				</div>
+				<div class="item-content">
+					<div class="text">
+						<input id="chinesenameId" name="chinesename" type="text" class="form-control" value="" readonly="">
+					</div>
+				</div>
+			</div>
+			<div class="item">
+				<div class="item-heading">
+					<h4>性别</h4>
+				</div>
+				<div class="item-content">
+					<div class="text">
+						<input id="genderId" name="gender" type="text" class="form-control" value="男" readonly="">
+					</div>
+				</div>
+			</div>
+			<div class="item">
+				<div class="item-heading">
+					<h4>出生日期</h4>
+				</div>
+				<div class="item-content">
+					<div class="text">
+						<input id="birthdayId" name="birthday" type="text" class="form-control" value="2002-09-07" readonly="">
+					</div>
+				</div>
+			</div>
+			<div class="item">
+				<div class="item-heading">
+					<h4>国籍</h4>
+				</div>
+				<div class="item-content">
+					<div class="text">
+						<input id="nationalityId" name="nationality" type="text" class="form-control" value="美国" readonly="">
+					</div>
+				</div>
+			</div>
+			<div class="item">
+				<div class="item-heading">
+					<h4>护照号</h4>
+				</div>
+				<div class="item-content">
+					<div class="text">
+						<input id="passportnoId" name="passportno" type="text" class="form-control" value="***8341" readonly="">
+					</div>
+				</div>
+			</div>
+			<div class="item">
+				<div class="item-heading">
+					<h4>人员级别:(以二维码信息为准)</h4>
+				</div>
+				<div class="item-content">
+					<div class="text">
+						<input id="passportnoId" name="passportno" type="text" class="form-control" value="B" readonly="">
+					</div>
+				</div>
+			</div>
+			<div class="item">
+				<div class="item-heading">
+					<h4>发证机关</h4>
+				</div>
+				<div class="item-content">
+					<div class="text">
+						<input id="issuercnId" name="issuercn" type="text" class="form-control" value="南昌外国专家局" readonly="">
+					</div>
+				</div>
+			</div>
+			<div class="item">
+				<div class="item-heading">
+					<h4>工作单位</h4>
+				</div>
+				<div class="item-content">
+					<div class="text">
+						<input id="hireorgnameId" name="hireorgname" type="text" class="form-control" value="南昌市萧山区易口英语培训学" readonly="">
+					</div>
+				</div>
+			</div>
+			<!-- 派遣用人单位增加页面字段,如果有最终用人单位显示内容 -->
+
+			<div class="item" id="fCompany" style="display: none;">
+				<div class="item-heading">
+					<h4>最终用工单位</h4>
+				</div>
+				<div class="item-content">
+					<div class="text">
+						<input type="text" class="form-control" value="" readonly="">
+					</div>
+				</div>
+			</div>
+			<div class="item" id="ldDateBeg" style="display: none;">
+				<div class="item-heading">
+					<h4>最终用工单位开始时间</h4>
+				</div>
+				<div class="item-content">
+					<div class="text">
+						<input type="text" class="form-control" value="" readonly="">
+					</div>
+				</div>
+			</div>
+
+			<div class="item" id="ldDateEnd" style="display: none;">
+				<div class="item-heading">
+					<h4>最终用工单位结束时间</h4>
+				</div>
+				<div class="item-content">
+					<div class="text">
+						<input type="text" class="form-control" value="" readonly="">
+					</div>
+				</div>
+			</div>
+
+			<div class="item">
+				<div class="item-heading">
+					<h4>工作单位地址</h4>
+				</div>
+				<div class="item-content">
+					<div class="text">
+						<input id="actualAddrId" name="actualAddr" type="text" class="form-control" value="江西省南昌市新建县红角洲管理处前湖大道南昌大学医学院1299号" readonly="">
+					</div>
+				</div>
+			</div>
+			<div class="item">
+				<div class="item-heading">
+					<h4>工作岗位</h4>
+				</div>
+				<div class="item-content">
+					<div class="text">
+						<input id="occupationId" name="occupation" type="text" class="form-control" value="教学人员" readonly="">
+					</div>
+				</div>
+			</div>
+			<div class="item">
+				<div class="item-heading">
+					<h4>申请在中国工作职务</h4>
+				</div>
+				<div class="item-content">
+					<div class="text">
+						<input id="jobtitleId" name="jobtitle" type="text" class="form-control" value="语言教师" readonly="">
+					</div>
+				</div>
+			</div>
+
+			<!-- 派遣用人单位增加页面字段,如果有最终用人单位显示内容 -->
+
+				<div class="item" id="pwork" style="display: none;">
+					<div class="item-heading">
+						<h4>兼职单位工作</h4>
+					</div>
+					<div class="item-content">
+						<div class="text">
+							<input type="text" class="form-control" value="" readonly="">
+						</div>
+					</div>
+				</div>
+				<div class="item" id="pjob" style="display: none;">
+					<div class="item-heading">
+						<h4>兼职工作职务</h4>
+					</div>
+					<div class="item-content">
+						<div class="text">
+							<input type="text" class="form-control" value="" readonly="">
+						</div>
+					</div>
+				</div>
+
+			<div class="item">
+				<div class="item-heading">
+					<h4>有效期起始日期</h4>
+				</div>
+				<div class="item-content">
+					<div class="text">
+						<input id="datebegId" name="datebeg" type="text" class="form-control" value="2023-01-28" readonly="">
+					</div>
+				</div>
+			</div>
+			<div class="item">
+				<div class="item-heading">
+					<h4>有效期截止日期</h4>
+				</div>
+				<div class="item-content">
+					<div class="text">
+						<input id="dateendId" name="dateend" type="text" class="form-control" value="2028-01-28" readonly="">
+					</div>
+				</div>
+			</div>
+			<div class="item">
+				<div class="item-heading">
+					<h4>许可证状态</h4>
+				</div>
+				<div class="item-content">
+					<div class="text">
+						<input id="cardstatusId" name="cardstatus" type="text" class="form-control" value="已注销" readonly="">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+<script type="text/javascript">
+
+window.onload = function(){
+	/***派遣显示内容****/
+	//var fSubmit = document.getElementById("finalCompanyisSubmit").value;
+	var finalCompany = document.getElementById("finalCompany").value;
+
+	var parttimework = document.getElementById("parttimework").value;
+	var partjobtitle = document.getElementById("partjobtitle").value;
+
+	var labordispatchdatebeg = document.getElementById("labordispatchdatebeg").value;
+	var labordispatchdateend = document.getElementById("labordispatchdateend").value;
+
+	if(finalCompany!=null&&finalCompany!=""&&typeof(finalCompany)!="undefined"){
+		document.getElementById("fCompany").style.display="";//如果有值显示
+	}
+	if(parttimework!=null&&parttimework!=""&&typeof(parttimework)!="undefined"){
+		document.getElementById("pwork").style.display="";//如果有值显示
+	}
+	if(partjobtitle!=null&&partjobtitle!=""&&typeof(partjobtitle)!="undefined"){
+		document.getElementById("pjob").style.display="";//如果有值显示
+	}
+
+	if(labordispatchdatebeg!=null&&labordispatchdatebeg!=""&&typeof(labordispatchdatebeg)!="undefined"){
+		document.getElementById("ldDateBeg").style.display="";//如果有值显示
+	}
+	if(labordispatchdateend!=null&&labordispatchdateend!=""&&typeof(labordispatchdateend)!="undefined"){
+		document.getElementById("ldDateEnd").style.display="";//如果有值显示
+	}
+
+}
+</script>
+</body></html>
